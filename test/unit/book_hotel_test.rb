@@ -23,8 +23,6 @@ module Away
     end
 
     def test_books_an_hotel_room
-      
-
       assert_kind_of Booking, @service.booking
     end
 
@@ -32,7 +30,7 @@ module Away
       assert_equal "Jose Mota", @service.booking.name 
     end
 
-    def test_refers_the_correct_hotel
+    def test_refers_to_the_correct_hotel
       assert_equal "Sheraton NY", @service.booking.hotel.name
     end
 
